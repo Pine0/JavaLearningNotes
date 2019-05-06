@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq实现弹出广告</title>
+    <style>
+        #adGraph{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="adGraph" src="img/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg">
+    <script src="js/jquery-1.8.3.js"></script>
+    <script>
+        $(function () {
+            $("#adGraph").fadeIn(4000);
+            $("#adGraph").fadeOut(4000);
+        });
+    </script>
+</body>
+</html>
