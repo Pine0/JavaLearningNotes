@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高亮显示</title>
+    <style>
+        table{
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table border="1px" id="tab">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="tr1" onmouseover="changeColor('tr1','over')" onmouseout="changeColor('tr1', 'out')">
+            <td>1</td>
+            <td>张三</td>
+            <td>23</td>
+        </tr>
+        <tr id="tr2" onmouseover="changeColor('tr2','over')" onmouseout="changeColor('tr2', 'out')">
+            <td>2</td>
+            <td>李四</td>
+            <td>25</td>
+        </tr>
+        <tr id="tr3" onmouseover="changeColor('tr3','over')" onmouseout="changeColor('tr3', 'out')">
+            <td>3</td>
+            <td>王五</td>
+            <td>27</td>
+        </tr>
+        <tr id="tr4" onmouseover="changeColor('tr4','over')" onmouseout="changeColor('tr4', 'out')">
+            <td>4</td>
+            <td>赵六</td>
+            <td>29</td>
+        </tr>
+        <tr id="tr5" onmouseover="changeColor('tr5','over')" onmouseout="changeColor('tr5', 'out')">
+            <td>5</td>
+            <td>田七</td>
+            <td>30</td>
+        </tr>
+        <tr id="tr6" onmouseover="changeColor('tr6','over')" onmouseout="changeColor('tr6', 'out')">
+            <td>6</td>
+            <td>汾九</td>
+            <td>20</td>
+        </tr>
+        </tbody>
+    </table>
+    <script>
+        function changeColor(id, flag) {
+            var tr = document.getElementById(id);
+            if (flag === "over") {
+                tr.style.backgroundColor = "wheat";
+            }
+            else {
+                tr.style.backgroundColor = "white";
+            }
+        }
+    </script>
+</body>
+</html>
